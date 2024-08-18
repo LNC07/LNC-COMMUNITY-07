@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNC Coin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LNC Coin</h1>
+        <div class="balance">Your Balance: <span id="balance">0</span></div>
+        <div class="coin-container">
+            <div id="coin">💸</div>
+        </div>
+        <div class="actions">
+            <button id="mates">Mates</button>
+            <button id="tasks">Tasks</button>
+            <button id="boost">Boost</button>
+            <button id="withdrawal">Withdrawal</button>
+        </div>
+    </div>
+
+    <!-- Task Modal -->
+    <div id="task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Task</h2>
+            <p><a href="https://t.me/LNCCommunity" id="join-channel">Join Our Telegram Channel</a></p>
+            <button id="claim-reward">Claim 1000 Coins</button>
+        </div>
+    </div>
+
+    <!-- Boost Modal -->
+    <div id="boost-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Boost</h2>
+            <div id="upgrade-section">
+                <p>Upgrade Level: <span id="level">1</span></p>
+                <button id="upgrade">Upgrade for <span id="upgrade-cost">500</span> Coins</button>
+            </div>
+            <div id="limit-section">
+                <p>Daily Limit: <span id="limit">1000</span></p>
+                <button id="upgrade-limit">Upgrade for <span id="limit-cost">1500</span> Coins</button>
+            </div>
+            <div id="buy-bot-section">
+                <p>Buy Bot: <span id="buy-bot-cost">5000</span> Coins</p>
+                <button id="buy-bot">Buy Bot</button>
+            </div>
+            <div id="claim-bot-section" style="display: none;">
+                <p>Bot: 1500 Coins</p>
+                <button id="claim-bot">Claim</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
